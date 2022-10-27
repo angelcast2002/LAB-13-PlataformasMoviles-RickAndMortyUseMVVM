@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Ui.fragments.character_list.PlaceListFragment"
+    android:background="@color/white"
+    >
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar_ToolbarActivity_characterDetail_characterList"
+        android:layout_width="@dimen/ceroDp"
+        android:layout_height="wrap_content"
+        app:menu="@menu/top_app_bar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        style="@style/Widget.MaterialComponents.Toolbar.Surface"
+        android:backgroundTint="@color/color_toolbarActivity"
+        app:title="@string/text_Characters_materialToolbar"
+        app:titleTextColor="@color/white"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_recyclerActivity"
+        android:layout_width="@dimen/ceroDp"
+        android:layout_height="@dimen/ceroDp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar_ToolbarActivity_characterDetail_characterList"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:listitem="@layout/item_recycler_object"
+        />
+
+    <ProgressBar
+        android:id="@+id/progress_users"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:visibility="gone"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
