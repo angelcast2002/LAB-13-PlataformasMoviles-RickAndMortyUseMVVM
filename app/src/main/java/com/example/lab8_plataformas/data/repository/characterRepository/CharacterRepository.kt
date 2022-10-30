@@ -1,4 +1,4 @@
-package com.example.lab8_plataformas.data.repository
+package com.example.lab8_plataformas.data.repository.characterRepository
 
 
 import com.example.lab8_plataformas.data.Resource

@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">LAB8-Plataformas</string>
+    <string name="app_name">LAB13-Plataformas</string>
     <string name="text_species_characterDetail_fragment">Species:</string>
     <string name="text_status_characterDetail_fragment">Status:</string>
     <string name="text_gender_characterDetail_fragment">Gender:</string>
@@ -35,4 +35,7 @@
     <string name="text_mensaje_syncCharacter">¿Está seguro que desea actualizar? Se perderán todos los datos.</string>
     <string name="text_mensaje_saveNewData">Guardado con éxito.</string>
     <string name="text_mensaje_noInternet">¡Sin internet!</string>
+    <string name="mensajeError_LogIn_userorpasswordIncorrect">Correo o contraseña incorrectos</string>
+    <string name="errorE_logIn">Algo salio mal</string>
+    <string name="text_noHaIniciadoSesion">No ha iniciado sesión</string>
 </resources>
