@@ -10,8 +10,9 @@ import androidx.fragment.app.viewModels
 import androidx.lifecycle.lifecycleScope
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.lab8_plataformas.data.local.entity.Character
-import com.example.lab8_plataformas.ui.character_list.recylcerView.adapter.PlaceAdapter
 import com.example.lab8_plataformas.databinding.FragmentPlaceListBinding
+import com.example.lab8_plataformas.ui.character_list.recylcerView.adapter.PlaceAdapter
+
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.flow.collectLatest
 

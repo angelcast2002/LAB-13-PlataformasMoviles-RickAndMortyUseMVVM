@@ -81,8 +81,9 @@ class LoginFragment: Fragment() {
                 }
             }
             LogInUiStatus.Succes -> {
-                logIn()
                 viewModel.setDefault()
+                logIn()
+
             }
 
         }

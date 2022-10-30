@@ -8,14 +8,20 @@ import dagger.hilt.InstallIn
 import dagger.hilt.android.qualifiers.ApplicationContext
 import dagger.hilt.components.SingletonComponent
 import javax.inject.Singleton
+import com.example.lab8_plataformas.data.repository.dataStoreRepository.LoggedRepository
 
 
 @Module
 @InstallIn(SingletonComponent::class)
 object DataStoreModule {
 
-    @Singleton
     @Provides
-    fun provideDataStoreRepository(@ApplicationContext context: Context)
-    = LoggedRepositoryImpl(context)
+    @Singleton
+    fun provideDataStoreRepository(
+        @ApplicationContext context: Context
+    ): LoggedRepository{
+        return LoggedRepositoryImpl(
+            context
+        )
+    }
 }

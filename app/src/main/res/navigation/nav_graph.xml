@@ -19,7 +19,7 @@
         android:label="login_fragment"
         tools:layout="@layout/login_fragment" >
         <action
-            app:popUpTo="@id/placeListFragment"
+            app:popUpTo="@id/loginFragment"
             app:popUpToInclusive="true"
             android:id="@+id/action_loginFragment_to_placeListFragment"
             app:destination="@id/placeListFragment" />
